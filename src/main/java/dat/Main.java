@@ -25,7 +25,9 @@ public class Main {
 
         ActivityDTO activity = ActivityDTO.builder()
                 .activityType(Activity.WALKING)
-                .date(LocalDateTime.now())
+                .timeOfDat(LocalDateTime.now())
+                .duration(1.3)
+                .distance(5.3)
                 .location(city)
                 .weatherInfo(weather)
                 .build();
