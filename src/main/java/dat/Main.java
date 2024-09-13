@@ -1,14 +1,11 @@
 package dat;
 
-import dat.config.HibernateConfig;
 import dat.dtos.ActivityDTO;
 import dat.dtos.CityInfoDTO;
 import dat.dtos.WeatherInfoDTO;
-import dat.enums.Activity;
+import dat.enums.ActivityType;
 import dat.services.CityService;
 import dat.services.WeatherService;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
 
 import java.time.LocalDateTime;
 
@@ -24,7 +21,7 @@ public class Main {
         //System.out.println(city);
 
         ActivityDTO activity = ActivityDTO.builder()
-                .activityType(Activity.WALKING)
+                .activityType(ActivityType.WALKING)
                 .timeOfDat(LocalDateTime.now())
                 .duration(1.3)
                 .distance(5.3)

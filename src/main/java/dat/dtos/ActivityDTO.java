@@ -1,6 +1,6 @@
 package dat.dtos;
 
-import dat.enums.Activity;
+import dat.enums.ActivityType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
 
 public class ActivityDTO {
 
-    private Activity activityType;
+    private ActivityType activityType;
     private LocalDateTime timeOfDat;
     private double duration;
     private double distance;

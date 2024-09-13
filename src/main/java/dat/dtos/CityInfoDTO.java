@@ -20,8 +20,8 @@ public class CityInfoDTO {
     @JsonSetter("navn") // kig i Jason og se va navnet er sat til
     private String name;
 
-    @JsonSetter("kode")
-    private int kode;
+    @JsonSetter("code")
+    private int code;
 
     @Override
     public String toString() {
@@ -29,7 +29,7 @@ public class CityInfoDTO {
                 "City Info:\n" +
                         " - Name: %s\n" +
                         " - Code: %d",
-                name, kode
+                name, code
         );
     }
 }
